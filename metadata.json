@@ -1,0 +1,14 @@
+{
+  "name": "aageyev-mysql",
+  "version": "0.1.0",
+  "author": "aageyev",
+  "summary": "My MySQL Configuration",
+  "license": "Apache 2.0",
+  "source": "git@github.com:aageyev/mysql.git",
+  "project_page": "https://github.com/aageyev/mysql/wiki",
+  "issues_url": "https://github.com/aageyev/mysql/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
