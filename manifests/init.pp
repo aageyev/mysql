@@ -36,6 +36,13 @@
 # Copyright 2015 Your name here, unless otherwise noted.
 #
 class mysql {
+  apt::source { "percona.com":
+    location   => "http://repo.percona.com/apt",
+    release    => $::lsbdistcodename,
+    repos      => "main",
+    key        => "CD2EFD2A",
+    key_server => "keys.gnupg.net",
+  }
 
-
+  package { "xtrabackup": ensure => "present", }
 }

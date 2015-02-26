@@ -1,0 +1,23 @@
+[mysqld]
+
+key_buffer_size     = <%= key_buffer_size %>
+max_allowed_packet  = <%= max_allowed_packet %>
+thread_stack        = <%= thread_stack %>
+thread_cache_size   = <%= thread_cache_size %>
+myisam-recover      = BACKUP
+max_connections     = <%= max_connections %>
+
+query_cache_type    = <%= query_cache_type %>
+query_cache_limit   = <%= query_cache_limit %>
+query_cache_size    = <%= query_cache_size %>
+
+
+tmp_table_size      = <%= tmp_table_size %>
+max_heap_table_size = <%= max_heap_table_size %>
+#################################################
+# table_cache         = 64
+# thread_concurrency  = 10
+# key_buffer_size     = 8G
+# open_files_limit    = 102400
+# myisam-recover      = BACKUP
+# join_buffer_size    = 16M

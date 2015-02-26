@@ -1,0 +1,18 @@
+[mysqld]
+
+server-id                = <%= server_id %>
+binlog_format            = <%= binlog_format %>
+log_bin                  = <%= server_name %>.log
+relay-log                = <%= server_name %>.relay.log
+
+# slave-compressed         = 1
+expire_logs_days         = 10
+max_binlog_size          = 100M
+sync_binlog              = 1
+
+replicate-same-server-id = <%= replicate_same_server_id %>
+auto-increment-increment = <%= auto_increment_increment %>
+auto-increment-offset    = <%= auto_increment_offset %>
+
+#binlog_do_db		= include_database_name
+#binlog_ignore_db	= include_database_name
